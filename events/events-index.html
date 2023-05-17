@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Onlcick events</h1>
+        <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+    <p id="demo"></p>
+    <h1>Using this functions</h1>
+    <button onclick="this.innerHTML=Date()"> The time is?</button>
+    <h1>Using script based functions</h1>
+    <button onclick="displayDate()">Click me</button>
+
+    <p id="test"></p>
+    <h1>Alert button</h1>
+    <button onclick="alert('Hello')">Click me.</button>
+    <h1>mouseover effect</h1>
+    <!-- <div onmouseover="this.style.backgroundColor='red'">myDIV.</div> -->
+    <button onmouseover="this.style.backgroundColor='red'">button.</button>
+    </body>
+    <script>
+        function displayDate(){
+            document.getElementById("test").innerHTML = Date();
+        }
+    </script>
+</html>
