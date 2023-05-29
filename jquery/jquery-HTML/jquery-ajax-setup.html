@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.ajaxSetup({url: "https://raw.githubusercontent.com/itsfoss/text-files/master/sample_log_file.txt", success: function(result){
+      $("div").html(result);}});
+    $.ajax();
+  });
+});
+</script>
+</head>
+<body>
+    <!-- https://www.w3schools.com/jquery/jquery_ref_ajax.asp -->
+<div><h2>Let AJAX change this text</h2></div>
+<p>reference - https://www.w3schools.com/jquery/jquery_ref_ajax.asp</p>
+<button>Change Content</button>
+
+</body>
+</html>

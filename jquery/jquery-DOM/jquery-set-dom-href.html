@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hide function using jquery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+           $(document).ready(function(){
+            $("#button").click(function(){
+                $("#w3s").attr("href", "https://w3schools.com/jquery/")
+            });
+           });
+        </script>
+    </head>
+    <body>
+        <p><a href="https://w3schools.com" id="w3s">W3schools.com</a></p>
+        <button id="button">Change href Value</button>
+        
+    </body>
+</html>

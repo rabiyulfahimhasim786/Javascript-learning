@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hide function using jquery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("p").toggle();
+                });
+
+             });
+        </script>
+    </head>
+    <body>
+       
+     
+        <p>click me to hide</p>
+        <p>Cicke me to hide me</p>
+        <p> Testing</p>
+        <p> Jquery hide definitions and examples</p>
+        <p>jQuery Syntax</p>
+    
+        <p>The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).
+            
+            Basic syntax is: $(selector).action()
+            
+            A $ sign to define/access jQuery
+            A (selector) to "query (or find)" HTML elements
+            A jQuery action() to be performed on the element(s)
+            Examples:
+            
+            $(this).hide() - hides the current element.
+            
+            $("p").hide() - hides all <p> elements.
+            
+            $(".test").hide() - hides all elements with class="test".
+            
+            $("#test").hide() - hides the element with id="test".</p>
+            <p>Examples</p>
+            <p></p>
+               
+                <p>basic Syntax</p>
+
+
+                <p>$(document).ready(function(){</p>
+
+                    <p>// jQuery methods go here...</p>
+                  
+                <p>});</p>
+
+            <p>$(selector).hide(speed,callback);</p>
+
+            <p>$(selector).show(speed,callback); </p>
+        
+        
+        <button>Hide</button>
+        
+    </body>
+</html>

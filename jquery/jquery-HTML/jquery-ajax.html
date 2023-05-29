@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.ajax({url: "https://raw.githubusercontent.com/itsfoss/text-files/master/sherlock.txt", success: function(result){
+      $("#div1").html(result);
+    }});
+  });
+});
+</script>
+</head>
+<body>
+
+<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+<p>reference - https://www.w3schools.com/jquery/jquery_ref_ajax.asp</p>
+<button>Get External Content</button>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.getJSON("https://gist.githubusercontent.com/BobTheGeek/5319821/raw/df6fe9ee37899f934ab7dc33e06c34463b9445d3/gistfile1.js", function(result){
+      $.each(result, function(i, field){
+        $("div").append(field + " ");
+      });
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Get JSON data</button>
+<p>reference - https://www.w3schools.com/jquery/jquery_ref_ajax.asp</p>
+<div></div>
+
+</body>
+</html>
