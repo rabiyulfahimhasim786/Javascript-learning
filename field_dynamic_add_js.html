@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+<body>
+    <form onsubmit="myFunction()" action="javascript:void(0);" id="myForm" >
+            <div class="form-row">
+              <div class="form-group col-md-2">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name" required>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="age">Age</label>
+                <input type="age" class="form-control" id="age" placeholder="Age" required>
+              </div>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="country">Country</label>
+                <select id="country" class="form-control" required>
+                  <option selected value="">select</option>
+                  <option value="india">India</option>
+                  <option value="uk">Uk</option>
+                  <option value="usa">Usa</option>
+                  <option value="aus">Aus</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="state">State</label>
+                <select id="state" class="form-control" required>
+                  <option selected value="">select</option>
+                  <option value="tamilnadu">TamilNadu</option>
+                  <option value="kerala">Kerala</option>
+                  <option value="houston">Houston</option>
+                  <option value="karnataka">Karnataka</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="zipcode">Zipcode</label>
+                <input type="text" class="form-control" id="zipcode" placeholder="zipcode" required>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="shippig">Shippig</label>
+                <select id="shippig" class="form-control" required>
+                  <option selected value="">select</option>
+                  <option value="10.00">ground floor</option>
+                  <option value="20.00">Frist Day Air</option>
+                  <option value="34.00">Third Day Air</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="tax">Tax</label>
+                <select id="tax" class="form-control" required>
+                  <option selected value="">select</option>
+                  <option value="8.25">8.25%</option>
+                  <option value="9">9%</option>
+                  <option value="10">10%</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="price">Price</label>
+                <input type="number" class="form-control" id="price" placeholder="price" required>
+            </div>
+
+            <label for="price">Language knowledge</label>
+             <div style="display: flex;">
+                <div class="form-check form-check-inline" style="margin-right:5px;">
+                    <label class="form-check-label" for="checkbox_lang1">Tamil</label>
+                    <input class="form-check-input" type="checkbox" id="checkbox_lang1" name="language" value="option1" >
+                  </div>
+    
+                  <div class="form-check form-check-inline" style="margin-right:5px;">
+                    <label class="form-check-label" for="checkbox_lang2">English</label>
+                    <input class="form-check-input" type="checkbox" id="checkbox_lang2" name="language" value="option2" >
+                  </div>
+    
+                  <div class="form-check form-check-inline" style="margin-right:5px;">
+                    <label class="form-check-label" for="checkbox_lang3">Hindi</label>
+                    <input class="form-check-input" type="checkbox" id="checkbox_lang3" name="language" value="option3" >
+                  </div>
+                 <span class="form-group col-md-2" id="error_check" style="position: absolute;margin-top: 25px; color:red;"></span>
+             </div>
+
+             <div style="margin-left: 700px;margin-top: -55px;">
+                <label for="price">Gender</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gender_male" value="option1" required>
+                    <label class="form-check-label" for="gender_male">Male</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gender_female" value="option2" required>
+                    <label class="form-check-label" for="gender_female">Female</label>
+                  </div>
+
+             </div>
+            <button type="submit" onclick="myFunction() " class="btn btn-primary" style="margin-top: 20px; margin-left: 600px;">Submit</button>
+          </form>
+
+
+
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name_append" placeholder="Name">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="age">Age</label>
+              <input type="age" class="form-control" id="age_append" placeholder="Age">
+            </div>
+          </div>
+          <div class="form-group col-md-2">
+              <label for="country">Country</label>
+              <select id="country_append" class="form-control">
+                <option selected value="">select</option>
+                <option value="india">India</option>
+                <option value="uk">Uk</option>
+                <option value="usa">Usa</option>
+                <option value="aus">Aus</option>
+              </select>
+          </div>
+          <div class="form-group col-md-2">
+              <label for="state">State</label>
+              <select id="state_append" class="form-control">
+                <option selected value="">select</option>
+                <option value="tamilnadu">TamilNadu</option>
+                <option value="kerala">Kerala</option>
+                <option value="houston">Houston</option>
+                <option value="karnataka">Karnataka</option>
+              </select>
+          </div>
+          <div class="form-group col-md-2">
+              <label for="zipcode">Zipcode</label>
+              <input type="text" class="form-control" id="zipcode_append" placeholder="zipcode">
+          </div>
+
+          <div class="form-group col-md-2">
+              <label for="shippig">Shippig</label>
+              <select id="shippig_append" class="form-control">
+                <option selected value="">select</option>
+                <option value="10.00">ground floor</option>
+                <option value="20.00">Frist Day Air</option>
+                <option value="34.00">Third Day Air</option>
+              </select>
+          </div>
+
+          <div class="form-group col-md-2">
+              <label for="tax">Tax</label>
+              <select id="tax_append" class="form-control">
+                <option selected>select</option>
+                <option value="8.25">8.25%</option>
+                <option value="9">9%</option>
+                <option value="10">10%</option>
+              </select>
+          </div>
+
+          <div class="form-group col-md-2">
+              <label for="price">Price</label>
+              <input type="text" class="form-control" id="price_append" placeholder="price">
+          </div>
+
+          <label for="price">Language knowledge</label>
+           <div style="display: flex;">
+              <div class="form-check form-check-inline" style="margin-right:5px;">
+                  <label class="form-check-label" for="checkbox_lang1">Tamil</label>
+                  <input class="form-check-input" type="checkbox" id="append_checkbox_lang1" value="option1">
+                </div>
+  
+                <div class="form-check form-check-inline" style="margin-right:5px;">
+                  <label class="form-check-label" for="checkbox_lang2">English</label>
+                  <input class="form-check-input" type="checkbox" id="append_checkbox_lang2" value="option2">
+                </div>
+  
+                <div class="form-check form-check-inline" style="margin-right:5px;">
+                  <label class="form-check-label" for="checkbox_lang3">Hindi</label>
+                  <input class="form-check-input" type="checkbox" id="append_checkbox_lang3" value="option3">
+                </div>
+           </div>
+
+           <div style="margin-left: 700px;margin-top: -55px;">
+              <label for="price">Gender</label>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="appent_gender_male" value="option1">
+                  <label class="form-check-label" for="gender_male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="appent_gender_female" value="option2">
+                  <label class="form-check-label" for="gender_female">Female</label>
+                </div>
+           </div>
+           <div class="form-group col-md-2">
+            <label for="excect_value">excect_value</label>
+            <input type="text" class="form-control" id="excect_value" placeholder="excect_value">
+        </div>
+
+
+<script>
+    function myFunction() 
+    {
+        let name = document.getElementById("name").value;
+        document.getElementById("name_append").value = name;
+
+        let age = document.getElementById("age").value;
+        document.getElementById("age_append").value = age;
+
+        let state = document.getElementById("state").value;
+        document.getElementById("state_append").value = state;
+
+        let country = document.getElementById("country").value;
+        document.getElementById("country_append").value = country;
+
+        let zipcode = document.getElementById("zipcode").value;
+        document.getElementById("zipcode_append").value = zipcode;
+
+        let shippig = document.getElementById("shippig").value;
+        document.getElementById("shippig_append").value = shippig;
+
+        let tax = document.getElementById("tax").value;
+        document.getElementById("tax_append").value = tax;
+
+        let price = document.getElementById("price").value;
+        document.getElementById("price_append").value = price;
+
+        const checkbox_lang1 = document.getElementById("checkbox_lang1");
+        const append_checkbox_lang1 = document.getElementById("append_checkbox_lang1");
+        const myForm = document.getElementById("myForm");
+
+        const checkbox_lang2 = document.getElementById("checkbox_lang2");
+        const append_checkbox_lang2 = document.getElementById("append_checkbox_lang2");
+        
+        const checkbox_lang3 = document.getElementById("checkbox_lang3");
+        const append_checkbox_lang3 = document.getElementById("append_checkbox_lang3");
+      
+        myForm.addEventListener("submit", function (event) {
+            event.preventDefault(); 
+            append_checkbox_lang1.checked = checkbox_lang1.checked;
+            append_checkbox_lang2.checked = checkbox_lang2.checked;
+            append_checkbox_lang3.checked = checkbox_lang3.checked;
+   
+                if (!checkbox_lang1.checked && !checkbox_lang2.checked && !checkbox_lang3.checked) 
+                  {
+                    document.getElementById("error_check").innerHTML ="Please select at least one checkbox before submitting."
+                  }
+                else
+                {
+                  {
+                    document.getElementById("error_check").innerHTML =" "
+                  }
+                }  
+        });
+   
+        const gender_male = document.getElementById("gender_male");
+        const appent_gender_male = document.getElementById("appent_gender_male");
+
+        const gender_female = document.getElementById("gender_female");
+        const appent_gender_female = document.getElementById("appent_gender_female");
+
+        myForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            appent_gender_male.checked = gender_male.checked;
+            appent_gender_female.checked = gender_female.checked;
+        });
+
+        valuee_get =parseInt(price)  + parseInt(shippig);
+        tax_value_get =tax/100;
+        new_valuuuu =valuee_get*tax_value_get;
+        total =parseInt(valuee_get)  +parseInt(new_valuuuu) 
+        document.getElementById("excect_value").value = total;
+      
+    }
+
+
+
+</script> 
+
+</body>
+</html>
+
